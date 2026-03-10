@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portafolio de Jhon Kevin Berrio Lopez, Software Engineer Full Stack" id="meta-description">
+<title id="page-title">Kevin Berrio | Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="bg-glow bg-glow-left" aria-hidden="true"></div>
+<div class="bg-glow bg-glow-right" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="#inicio" class="brand">Kevin<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#experience" id="nav-experience">Experiencia</a></li>
+        <li><a href="#academic" id="nav-education">Formación</a></li>
+        <li><a href="#certifications" id="nav-certifications">Cursos</a></li>
+        <li><a href="#skills" id="nav-skills">Habilidades</a></li>
+        <li><a href="#about" id="nav-about">Perfil</a></li>
+      </ul>
+      <div class="nav-controls">
+        <label for="language-select" id="language-label">Idioma</label>
+        <select id="language-select" aria-label="Selector de idioma">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" id="hero-eyebrow">Software Engineer Full Stack</p>
+        <h1 id="hero-title">Hola, soy <span>Jhon Kevin Berrio Lopez</span></h1>
+        <p class="hero-description" id="hero-description">
+          Especializado en arquitectura moderna, microservicios y microfrontends para construir productos robustos, escalables y listos para producción.
+        </p>
+        <blockquote class="quote" id="hero-quote">
+          "Transformo necesidades complejas en soluciones escalables y mantenibles."
+        </blockquote>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience" id="hero-btn-experience">Ver experiencia</a>
+          <a class="btn btn-secondary" href="#about" id="hero-btn-about">Conóceme</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <div class="terminal-topbar" aria-hidden="true">
+          <div class="terminal-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="terminal-path">kevin@portfolio: ~/stack</p>
+        </div>
+        <h2 id="hero-stack-title">Stack principal</h2>
+        <ul id="hero-stack-list">
+          <li>Java + Spring Boot</li>
+          <li>Angular + React + NX</li>
+          <li>Docker + Kubernetes + Jenkins</li>
+          <li>AWS + CI/CD + Arquitectura limpia</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title" id="experience-title">Experiencia</h2>
+      <div class="stack-list">
+        <article class="card">
+          <div class="card-head">
+            <h3 id="exp-intempo-role">Desarrollador Full Stack - Intempo S.A.S.</h3>
+            <p id="exp-intempo-period">Septiembre 2023 - Diciembre 2025</p>
+          </div>
+          <ul id="exp-intempo-list">
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3 id="exp-heinsohn-role">Desarrollador Full Stack - Heinsohn Business Technology</h3>
+            <p id="exp-heinsohn-period">Octubre 2021 - Septiembre 2023</p>
+          </div>
+          <ul id="exp-heinsohn-list">
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="academic">
+    <div class="container">
+      <h2 class="section-title" id="academic-title">Formación Académica</h2>
+      <article class="card">
+        <ul id="academic-list">
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title" id="certifications-title">Cursos y Certificaciones</h2>
+      <article class="card">
+        <ul id="certifications-list">
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title" id="skills-title">Habilidades Técnicas</h2>
+      <div class="grid">
+        <article class="skill-card">
+          <h4 id="skills-cat-1"><span class="emoji-icon" aria-hidden="true">💻</span> Lenguajes de Programación</h4>
+          <p id="skills-cat-1-items"></p>
+        </article>
+        <article class="skill-card">
+          <h4 id="skills-cat-2"><span class="emoji-icon" aria-hidden="true">🧩</span> Frameworks y Librerías</h4>
+          <p id="skills-cat-2-items"></p>
+        </article>
+        <article class="skill-card">
+          <h4 id="skills-cat-3"><span class="emoji-icon" aria-hidden="true">🏗️</span> Arquitectura y Desarrollo</h4>
+          <p id="skills-cat-3-items"></p>
+        </article>
+        <article class="skill-card">
+          <h4 id="skills-cat-4"><span class="emoji-icon" aria-hidden="true">☁️</span> Cloud & DevOps</h4>
+          <p id="skills-cat-4-items"></p>
+        </article>
+        <article class="skill-card">
+          <h4 id="skills-cat-5"><span class="emoji-icon" aria-hidden="true">🗄️</span> Bases de Datos</h4>
+          <p id="skills-cat-5-items"></p>
+        </article>
+        <article class="skill-card">
+          <h4 id="skills-cat-6"><span class="emoji-icon" aria-hidden="true">🔧</span> Herramientas y Control de Versiones</h4>
+          <p id="skills-cat-6-items"></p>
+        </article>
+        <article class="skill-card">
+          <h4 id="skills-cat-7"><span class="emoji-icon" aria-hidden="true">🧪</span> Pruebas Unitarias</h4>
+          <p id="skills-cat-7-items"></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title" id="about-title">Perfil Profesional</h2>
+      <article class="card">
+        <p id="about-p1"></p>
+        <p id="about-p2"></p>
+      </article>
+    </div>  
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p class="contact-link">
+      <span class="social-icon gmail" aria-hidden="true">
+        <img src="./assets/icons/gmail.svg" alt="">
+      </span>
+      <a href="mailto:kevinavs.2001@gmail.com">kevinavs.2001@gmail.com</a>
+    </p>
+    <p class="contact-link">
+      <span class="social-icon linkedin" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.38 4.27 5.48v6.26zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"></path>
+        </svg>
+      </span>
+      <a href="https://linkedin.com/in/jkevinilopez" target="_blank" rel="noopener noreferrer">linkedin.com/in/jkevinilopez</a>
+    </p>
+    <p>© Copyright 2026. Made by Kevin</p>
+  </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
